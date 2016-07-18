@@ -1,0 +1,404 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+/*header*/
+#mainheader {
+	width: 100%;
+	height: 50px;
+	min-width: 1100px;
+}
+#header_container {
+	width: 90%;
+	height: 50px;
+	margin: 0 auto;
+	position: relative;
+}
+/*navpanel*/
+#navlogo {
+	max-height: 23px;
+	max-width: 108px;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 13px;
+}
+nav {
+	font-family: "Open Sans","Lucida Grande","Segoe UI", "Arial", "Verdana", "Lucida Sans Unicode", "Tahoma", sans-serif;
+	font-size: 16px;
+	padding-top: 5px;
+	float: left;
+}
+nav ul ul {
+	display: none; 
+	position: absolute;
+	top: 100%;
+}
+nav ul ul li {
+	float: none;
+	position: relative;
+}
+nav ul ul ul {
+	position: absolute;
+	top: 0;
+	left: 100%;
+}
+nav ul li:hover > ul {
+	display: block;
+	background: #f0f5f5;
+	z-index: 200;
+}
+nav ul {	
+	text-decoration: none;
+	list-style-type: none;
+	font-weight: 50;
+	display: inline-table;
+	position: relative;
+}
+nav li {
+	list-style-type: none;
+	float: left;
+	width: 105px;
+	text-align: left;
+}
+nav li a {
+	text-decoration: none;
+	display: block;
+	color: #47525d;
+	background-color: white;
+	padding: 10px;
+	z-index: 1;
+}
+nav li a:hover {
+	color: #47525d;
+	background: #f0f5f5;
+}
+nav i {
+	margin: 3px;
+}
+/*right-side header*/
+#headerInput {
+	position: relative;
+	float: right;
+	margin: 0 auto;
+	padding-top: 8px;
+}
+#headerSearchInput {
+	max-width: 200px;
+	height: 28px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	position: relative;
+	float: left;
+	display: inline;
+	border: 1px solid #8c8c8c;
+	background-image: url("search_icon.jpg"); 
+	background-repeat: no-repeat;
+	background-position: 2px;
+	padding-left: 20px;
+	font-size: 13px; 
+}
+.headerDiv {
+	width: 40px;
+	height: 40px;
+	display: inline;
+	float: left;
+}
+.headerDiv span {
+	position: relative;
+	margin-left: 12px;
+	margin-top: 10px;
+	font-size: 14px;
+	color: #47525d;
+}
+.headerDiv a {
+	font-family: "Open Sans","Lucida Grande","Segoe UI", "Arial", "Verdana", "Lucida Sans Unicode", "Tahoma", sans-serif;
+	font-size: 12px;
+	color: #47525d;
+	position: absolute;
+	margin-left: 5px;
+	margin-top: 11px;
+}
+.headerDiv a {
+	text-decoration: none;
+}
+#enter__container {
+	visibility: hidden;
+	float: left;
+	width: 350px;
+	min-width: 280px;
+	max-width: 100%;
+	min-height: 320px;
+	box-sizing: border-box;
+	position: fixed;
+	margin-top: 10%;
+	margin-left: 30%;
+	background: #e6e9ec;
+	z-index: 400;
+	padding: 20px 20px 25px 20px;
+	border-radius: 3px;
+}
+#modalWindow {
+	visibility: hidden;
+	width: 265px;
+	height: 170px;
+	background-color: #e6ffe6;
+	padding: 23px;
+	position: relative;
+	z-index: 11;
+}
+#modalWindow  > p, span {
+	font-family: "Open Sans","Lucida Grande","Segoe UI", "Arial", "Verdana", "Lucida Sans Unicode", "Tahoma", sans-serif;
+	color: #47525d;
+}  
+#modalWindow  > p {
+	text-align: center;
+	font-size: 15px;
+} 
+#modalWindow  > span {
+	text-align: left;
+	font-size: 12px;
+} 
+.checkboxField {
+	margin: 2px;
+}
+.inputField {
+	width: 220px;
+	height: 40px;
+	border: none;
+	border-radius: 2px;
+	padding-left: 5px;
+	margin-bottom: 10px;
+}
+.parolForm {
+	float: left;
+	width: 100%;
+	display: inline;
+	position: relative;
+	padding-top: 20px;
+	text-align: left;
+	border: 1px colid #85adad;
+}
+.parolText {
+	float: left;
+	position: relative;
+	width: 160px;
+	height: 40px;
+	padding-left: 4px;
+	padding-top: 7px;
+}
+.parolText a {
+	vertical-align: middle;
+	font-size: 15px;
+	font-family: "Open Sans","Lucida Grande","Segoe UI", "Arial", "Verdana", "Lucida Sans Unicode", "Tahoma", sans-serif;
+	color: #47525d;
+	text-align: center;
+	padding-top; 50%;
+}
+#btn1 {
+	width: 80px;
+	height: 40px;
+	background-color: yellow;
+	font-family: "Open Sans","Lucida Grande","Segoe UI", "Arial", "Verdana", "Lucida Sans Unicode", "Tahoma", sans-serif;
+	color: #47525d;
+	font-size: 14px;
+	position: relative;
+	float: right;
+	text-align: center;
+	border-radius: 5px;
+	text-align: baseline;
+}
+/*banner*/
+#banner {
+	background-image: url("banner.jpg");
+	background-position: right;
+	background-size: cover;
+	width: 100%;
+	height: 640px;
+	min-width: 1000px;
+	z-index: 100;
+}
+.top-section_container {
+	position: relative;
+	box-sizing: content-box;
+	min-height: 550px;
+	width: 33,33333333%;    
+	margin-left: 15%;
+	padding-top: 75px;
+	padding-bottom: 75px;
+	text-align: left;
+	z-index: 100;
+}
+.top-section_container  p {
+	font-family: "Open Sans","Lucida Grande","Segoe UI", "Arial", "Verdana", "Lucida Sans Unicode", "Tahoma", sans-serif;
+	color: #47525d;
+	line-height: 1.3;
+	font-weight: 100;
+}
+#banner_text {
+	padding: 5px;
+	float: left;
+	width: 40%;
+}
+.banner_header_text {
+	font-size: 47.25px;
+	position: relative;
+}
+.hiddenText {
+	visibility: hidden;
+}
+.banner_sub-header_text {
+	font-size: 21px;
+	position: relative;
+	width: 300px;
+	padding-top: 25px;
+}
+.banner_button {
+	position: relative;
+	float: left;
+	padding-top: 15px;
+	width: 80%;
+	height: 70px;
+}
+#buybutton {
+	padding: 19px 16px;
+	font-size: 21px;
+	line-height: 21px;
+	background: #0071e0;
+	color: #fff;
+	display: block;
+	text-align: center;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+}
+.banner_button p a {
+	margin-top: 0.5px;
+	position: relative;
+	text-align: left;
+	font-family: "Open Sans","Lucida Grande","Segoe UI", "Arial", "Verdana", "Lucida Sans Unicode", "Tahoma", sans-serif;
+	color: #47525d;
+}
+/*subscription*/
+#subscription {
+	background-color: #e6ffe6;
+	width: 100%;
+	height: 180px;
+	min-width: 1000px;
+}
+#subscription header, article, footer {
+	text-align: center;
+}
+#subscription  article {
+	padding-top: 15px;
+}
+#subscription header p{
+	font-family: "Open Sans","Lucida Grande","Segoe UI", "Arial", "Verdana", "Lucida Sans Unicode", "Tahoma", sans-serif;
+	color: #404040;
+	font-size: 20px;
+	padding-top: 22px;
+	padding-bottom: 10px;
+}
+#subscription input {
+	width: 220px;
+	height: 40px;
+	border: none;
+	border-radius: 2px;
+}
+#inputName {
+	background-image: url("logoname.jpg"); 
+	background-repeat: no-repeat;
+	outline: none;
+	background-position: 3px;
+	padding-left: 28px;
+}
+#inputEmail {
+	background-image: url("logoemail.jpg"); 
+	background-repeat: no-repeat;
+	outline: none;
+	background-position: 3px;
+	padding-left: 33px;
+}
+#inputPassword {
+	background-image: url("logopassword.jpg"); 
+	background-repeat: no-repeat;
+	outline: none;
+	background-position: 3px;
+	padding-left: 29px;
+}
+#subscription footer {
+	font-family: "Open Sans","Lucida Grande","Segoe UI", "Arial", "Verdana", "Lucida Sans Unicode", "Tahoma", sans-serif;
+	color: #404040;
+	font-size: 12px;
+	padding-top: 20px;
+}
+#getbutton {
+	background-color: #99ffb3;
+}
+#getbutton value {
+	font-size: 15px;
+}
+/*blocks inline*/
+#blocks {
+	position: relative;
+	background-color: #cce6ff;
+	width: 100%;
+	height: 280px;
+	min-width: 1000px;
+}
+.blocksdiv {
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("light_img.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.5;
+	float: left;
+	display: block;
+	width: 33.33333333%;
+	height: 280px;
+	position: relative;
+}
+.blocks_heading {
+	text-align: center;
+	font-family: "Open Sans","Lucida Grande","Segoe UI", "Arial", "Verdana", "Lucida Sans Unicode", "Tahoma", sans-serif;
+	font-size: 15px;
+	color: #404040;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+	opacity: 0.3;
+	transition: transform 0.3s, opacity 0.3s;
+	padding-top: 100px;
+	height: 280px;
+	line-height: 20px;
+	position: relative;
+}
+/*main footer*/
+#mainfooter {
+	background-color:  #e0ebeb;
+	width: 100%;
+	height: 160px;
+	min-width: 1000px;
+}
+#mainfooter section {
+	width: 100px;
+	margin-left: 130px;
+	font-family: "Open Sans","Lucida Grande","Segoe UI", "Arial", "Verdana", "Lucida Sans Unicode", "Tahoma", sans-serif;
+	color: #404040;
+	font-size: 10px;
+	float: left;
+	padding-top: 2px;
+}
+#mainfooter section ul {
+	list-style-type: none;
+	text-align: left;
+	padding-bottom: 7px;
+}
+#mainfooter section a {
+	text-decoration: none;
+	color: #404040;
+}
+#mainfooter section li:first-child {
+	font-weight: bold;
+}

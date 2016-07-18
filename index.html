@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Task</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="script.js"></script>
+  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <script src="jquery.js"></script>
+</head>
+<body> 
+<header id="mainheader">
+ <div id="header_container">
+   <a href="#"><img id="navlogo" alt="navlogo" src="microsoftlogo.jpg"></a>
+   <nav>
+     <ul>
+       <li><a href="#">Magazine<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+         <ul>
+           <li><a href="#">Magazine 1</a></li>
+           <li><a href="#">Magazine 2</a></li>
+           <li><a href="#">Magazine 3</a></li>
+         </ul>
+       </li>
+       <li><a href="#">Products<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+         <ul>
+           <li><a href="#">Product 1</a></li>
+           <li><a href="#">Product 2</a></li>
+         </ul>
+       </li>
+       <li><a href="#">Support<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+         <ul>
+           <li><a href="#">Support 1<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+             <ul>
+               <li><a href="#">Support 1.1</a></li>
+               <li><a href="#">Support 1.2</a></li>
+             </ul>
+           </li>
+           <li><a href="#">Support 2</a></li>
+           <li><a href="#">Support 3<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+             <ul>
+               <li><a href="#">Support 3.1</a></li>
+               <li><a href="#">Support 3.2</a></li>
+               <li><a href="#">Support 3.3</a></li>
+             </ul>
+           </li>
+         </ul>
+       </li>
+     </ul>
+   </nav>
+ <div id="headerInput">
+   <input id="headerSearchInput" placeholder="Search">
+   <div class="headerDiv">
+     <span id="shopping-cart"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></span>
+   </div>
+   <!--При клике на "Enter" отобразиться модальное окно для ввода login & password-->
+   <div id="openEnterForm" class="headerDiv">
+     <a class="open" href="#">Enter</a>
+   </div>
+ </div>
+<!--При клике на "Enter" модальное окно ввода логин и пароля исчезнет по типу отправки формы action="post"-->
+ <div id="enter__container">
+   <form id="modalWindow">
+     <p>Sign in</p><br>
+     <input type="e-mail" class="inputField" placeholder="enter your e-mail"><br>
+     <input type="password" class="inputField" placeholder="enter your password"><br>
+     <input type="checkbox" class="checkboxField" checked="checked"><span>Remember me</span>
+   </form>
+   <form class="parolForm" action="">
+     <div class="parolText"><a href="#">Forgot your password?</a>
+     </div>
+     <div><input type="submit" id="btn1" value="Enter">
+     </div>
+   </form>
+ </div>
+</div>
+</header>
+<section id="banner">
+  <div class="top-section_container">
+    <div id="banner_text">
+      <p class="banner_header_text">Sed ut perspici, circumses ab magni dolores ipsum</p>
+      <p class="banner_sub-header_text">colores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci</p>
+    </div>
+    <div class="banner_button">
+      <input type="button" id="buybutton" value="Показать либо скрыть основной текст страницы"><br>
+      <p>illo <a href="#">ipsum quia dolor</a></p>
+    </div>
+  </div>
+</section>
+<section id="subscription">
+  <header>
+    <p>Join over 2 million designers already using InVision. Get InVision <b>free</b> forever</p>
+  </header>
+  <article>
+    <form id="subscriptionForm">
+      <input id="inputName" name="inputName" type="text" placeholder="Your Name" required>
+      <input id="inputEmail" name="inputEmail" type="text" placeholder="Your Email" required>
+      <input id="inputPassword" name="inputPassword"  type="password" placeholder="Create a Password" required>
+      <input id="getbutton" name="getbutton" type="submit" value="GET STARTED - FREE FOREVER">
+    </form>
+  </article>
+  <footer>
+    <p>By clicking &quotGet Started - Free Forever&quot I agree to InVision's <a href="#">Terms of Service.</a></p>
+  </footer>
+</section>
+<section id="blocks">
+<!--при наведении на блоки курсора мышки меняется их прозрачность-->
+  <a href="#"><div class="blocksdiv">
+    <div class="blocks_heading">
+      <h4>Some text 1</h4>
+      <h3>Some main text</h3>
+    </div>
+  </div></a>
+  <a href="#"><div class="blocksdiv">
+    <div class="blocks_heading">
+      <h4>Some text 2</h4>
+      <h3>Some main text</h3>
+    </div>
+  </div></a>
+  <a href="#"><div class="blocksdiv">
+    <div class="blocks_heading">
+      <h4>Some text 3</h4>
+      <h3>Some main text</h3>
+    </div>
+  </div></a>
+</section>
+<footer id="mainfooter">
+<section>
+  <ul>
+    <li><a href="#">Natus error</a></li>
+    <li><a href="#">Ttempor</a></li>
+    <li><a href="#">Commodo</a></li>
+    <li><a href="#">Dicta</a></li>
+    <li><a href="#">Magni</a></li>
+    <li><a href="#">Quia</a></li>
+    <li><a href="#">Enim</a></li>
+  </ul>
+</section>
+<section>
+  <ul>
+    <li><a href="#">Natus error</a></li>
+    <li><a href="#">Ttempor</a></li>
+    <li><a href="#">Commodo</a></li>
+    <li><a href="#">Dicta</a></li>
+    <li><a href="#">Magni</a></li>
+    <li><a href="#">Quia</a></li>
+    <li><a href="#">Enim</a></li>
+  </ul>
+</section>
+<section>
+  <ul>
+    <li><a href="#">Natus error</a></li>
+    <li><a href="#">Ttempor</a></li>
+    <li><a href="#">Commodo</a></li>
+    <li><a href="#">Enim</a></li>
+  </ul>
+  <ul>
+    <li><a href="#">Rror</a></li>
+    <li><a href="#">Magni</a></li>
+    <li><a href="#">Quia</a></li>
+    <li><a href="#">Enim</a></li>
+  </ul>
+</section>
+<section>
+  <ul>
+    <li><a href="#">Natus error</a></li>
+    <li><a href="#">Ttempor</a></li>
+    <li><a href="#">Commodo</a></li>
+    <li><a href="#">Dicta</a></li>
+    <li><a href="#">Magni</a></li>
+    <li><a href="#">Quia</a></li>
+    <li><a href="#">Enim</a></li>
+  </ul>
+</section>
+</footer>
+</body>
+</html>
